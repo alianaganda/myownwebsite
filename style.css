@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    list-style: none;
+  }
+  
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  
+  body {
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+ 
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 105%;
+  }
+  html, body {
+    user-select: text;
+}
+.header{
+  position:fixed;
+  height: 100vh;  
+  width:100%;
+  justify-content: space-between;
+  z-index:500;
+}
+.hcontainer{
+  background: rgb(169,138,208);
+  background: linear-gradient(270deg, rgba(169,138,208,1) 0%, rgba(183,164,209,1) 100%);
+  height: 10rem;
+}
+.header__left img{
+  border-radius: 50%;
+  height: 7.5rem;
+  margin-left: 25rem;
+  margin-top:1.5rem;
+}
+.header__left p{
+  color:#ffffff;
+  font-size: 2rem;
+  margin-left: 35rem;
+  margin-top:-5.5rem;
+
+}
+.header__left p:hover{
+color: #7F50B9;
+}
+.header__nav{
+  display:flex;
+  gap: 9rem;
+  margin-right:20rem;
+  margin-top:4rem;
+  margin-left:65rem;
+  margin-top:-2.5rem;
+}
+.header__nav li a{
+padding:0.5rem 1rem;
+border:2px solid transparent;
+text-decoration: none;
+font-weight: 600;
+color:var(--light);
+transition: 0.3s;
+}
+.header__nav li a:hover{
+  border-top-color: var(--purple);
+  border-bottom-color: var(--purple);
+  color: var(--purple);
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-left:140rem;
+  margin-top:-2.5rem;
+}
+.header__right ul {
+  display: flex;
+  gap: 3rem;
+  transition: .3s ease-in-out;
+}
+/* magpapalit ng color ng header nav */
+.header__right ul li a {
+  color: #ffffff;
+  font-weight: 500;
+}
+/* color change kapag ihhover */
+.header__right ul li a:hover {
+  color: #7F50B9;
+  transition: .5s ease;
+} 
+.banner__area img{
+  display:flex;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center center;
+  top:o;
+  position:fixed;
+  width:100%;
+  z-index:-1;
+}
+.banner__area:after{
+  content: '';
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  width:100%;
+  opacity:.7;
+  z-index:-1;
+}
+/* ABOUT */
+.about__me{
+  width:100%;
+  height:800px;
+  position:relative;
+  background:#dac9f2;
+  top:550px;
+}
+.about__me h3{
+font-size:6rem;
+font-weight: 600;
+margin:0;
+padding-top:6rem;
+padding-left:24rem;
+color:#7F50B9;
+}
+.about__me p{
+  color:#7F50B9;
+  padding:2% 0;
+  line-height:10px;
+  letter-spacing:justify;
+  padding-left:24rem;
+}
+.about__right img{
+  width:45rem;
+  height:100%;
+  margin-left:110rem;
+  border-radius: 2rem;
+  margin-top:5rem;
+  background:#7F50B9;
+  opacity:.9;
+}
+.about__right img:hover{
+  background:#7F50B9;
+  opacity:.6;
+}
+.about__left h3{
+  margin-top:-59rem;
+  margin-left:2rem;
+}
+.about__left p{
+  margin-left: 2rem;
+  max-width: 70rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  white-space:nowrap;
+  line-height:3rem;
+}
+.btns{
+  display: flex;
+  gap:1rem;
+}
+.btns button{
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding:1rem 2rem;
+  outline: none;
+  border: 2px solid #7F50B9;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor:pointer;
+
+}
+.contact__me{
+  margin-left: 26rem;
+  background-color: #7F50B9;
+  color: #ffffff;
+}
+.contact__me:hover{
+  background-color: var(--light);
+}
+.portfolio{
+  color: #7F50B9;
+}
+.portfolio:hover{
+  background-color: #7F50B9;
+  color:#dac9f2;
+}
+::selection{
+  background-color:#bf6eee;
+  color:#e5d8f7;
+}
+/* GALLERY */
+.gallery{
+  background: #9e78cf;
+  min-height: 170vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery__title h4 {
+  margin-left:15rem;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: -8rem;
+}
+.gallery__title p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-left:2rem;
+  margin-bottom: 2rem;
+}
+.gallery__title li a{
+  font-size: 1.3rem;
+  margin-top:-10rem;
+  margin-left:2rem;
+}
+.gallery__card{
+  position:absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75rem;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap:25px;
+}
+.box{
+  margin:0 10px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  transition: 1s;
+}
+.box:hover{
+  transform: scale(1.3);
+  z-index: 2;
+}
+.gallery img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+}
+/* PROJECT */
+.project {
+  background:#c1b0da;
+  min-height: 160vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__title {
+  text-align: center;
+}
+.project__title h3 {
+  font-size: 8rem;
+  font-size: 6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.project__title p {
+  font-size: 2rem;
+  font-weight: 300;
+  /* for space */
+  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+}
+.project__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project__card img {
+  border-radius: 3rem;
+  height: 95%;
+  width: 90%;
+  padding: 2rem;
+  object-fit: cover;
+  object-position: center;
+  /* para mapa-darken */
+  filter: brightness(50%);
+}
+.project__card {
+  /* padding: .2rem; */
+  /* para mapagitna na yung mismong lahat */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project__card span {
+  color: var(--light);
+  position: absolute;
+  margin-bottom: 7rem;
+}
+.project__card h4 {
+  color: var(--light);
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: absolute;
+  margin-bottom: -13rem;
+  text-align: center;
+}
+.project__card a {
+  color: var(--light);
+  font-weight: 500;
+  border: 2px solid var(--light);
+  position: absolute;
+  margin-bottom: -38.5rem;
+}
+.project__card a:hover {
+  color: var(--green);
+  transition: 0.5s ease-in-out;
+  border: 2px solid var(--green);
+}
+/* * RIGHT SIDE NAMAN */ 
+.contact{
+  background: #9e78cf;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__left h4{
+  margin-left:-1rem;
+  margin-top:1rem;
+  
+  font-size: 6rem;
+  font-weight: 600;
+}
+.contact__left img{
+    border-radius: 3rem;
+    padding: 2rem;
+    margin-left:63rem;
+    margin-top:-12rem;
+    height:45%;
+    width: 45%;
+    background: #c1b0da;
+
+}
+.socials {
+  display: flex;
+  gap: 3rem;
+  position: relative;
+  top:-66rem;
+  font-size: 2rem;
+}
+.contact__right{
+ margin-top:-60rem;
+}
+.contact__right h3{
+  color: var(--gray);
+  font-size: 2.5rem;
+  padding-bottom: 3rem;
+}
+.contact__right input[type="text"]{
+  display: flex;
+  width: 45%;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  transition: .3s;
+  background-color: #e7e3eb;
+  font-size: 2rem;
+}
+.contact__right input[type="text"]:focus{
+  border-color: var(--purple);
+  box-shadow: 0 0 8px 0 var(--purple);
+  color:var(--light);
+}
+.contact__right input[type="text"]::placeholder{
+  color: #924eca;
+}
+.type input[type="text"][placeholder="Name:"]{
+  padding:2rem;
+}
+.type input[type="text"][placeholder="Email:"] {
+  padding:2rem;
+}
+.type input[type="text"][placeholder="Message:"] {
+  padding: 6rem 2rem 8rem 2rem;
+  display: block;
+  vertical-align: top;
+}
+.type{
+  padding-bottom: 6rem;
+}
+/* anchor patapos na talaga */
+.contact__right a{
+  padding-bottom: 10rem;
+  font-size: 2rem;
+  color: var(--light);
+  color: var(--light);
+    border:2px solid var(--purple);
+    padding: 1.5rem 8rem;
+    align-items: center;
+    background-color: var(--purple);
+    border-radius: 1rem;
+    background: #924eca;
+    transition: color #7f50b9 0.3s ease;
+    transition: color 0.3s ease;
+}
+.contact__right a:hover{
+  color:var(--purple);
+  background-color: #7F50B9;
+  transition: color #b894f3 0.3s ease;
+  transition: color #8a58cc 0.3s ease;
+  background:transparent;
+}
+/* FOOTER YAY */
+footer{
+  position: relative;
+  width: 100%;
+  background: rgb(169,138,208);
+  background: linear-gradient(270deg, rgba(169,138,208,1) 0%, rgba(183,164,209,1) 100%);
+  min-height: 110px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__icon{
+  position: relative;
+  display: flex;
+
+  margin-left:-5rem;
+
+}
+.social__icon li{
+  list-style: none;
+}
+.social__icon li a{
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social__icon li a:hover{
+  transform: translateY(-10px);
+}
+footer p{
+  display: block;
+color: #fff;
+text-align: center;
+margin-top: 15px;
+margin-bottom: 10px;
+margin-left:70rem;
+font-size: 1.4rem;
+}
+
+
+
+
+
+
+  /* REPEATABLE PATTERNS */
+  :root{
+    --light: #ffffff;
+    --dark: #2b2b2b;
+    --purple: #7F50B9;
+    --poppins: "Poppins", sans-serif;
+    --serif: "Serif";
+  }
+
+  .btn {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: transparent;
+  }
+  .btn.bg--border-dark {
+    background-color: var(--light);
+    border: 1px solid var(--dark);
+    color: var(--dark);
+  }
+  .btn.bg--border-light {
+    background-color: transparent;
+    border: 2px solid var(--light);
+    color: var(--light);
+  }
